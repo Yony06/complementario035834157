@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="complementario035834157.MainPage">
+
+    <StackLayout Padding="20">
+
+        <Label Text="Ingrese las 5 calificaciones" 
+               FontSize="Large"
+               HorizontalOptions="Center"
+               Margin="0,20,0,20"/>
+
+        <Entry x:Name="calificacion1" Placeholder="Calificación 1" Keyboard="Numeric"/>
+        <Entry x:Name="calificacion2" Placeholder="Calificación 2" Keyboard="Numeric"/>
+        <Entry x:Name="calificacion3" Placeholder="Calificación 3" Keyboard="Numeric"/>
+        <Entry x:Name="calificacion4" Placeholder="Calificación 4" Keyboard="Numeric"/>
+        <Entry x:Name="calificacion5" Placeholder="Calificación 5" Keyboard="Numeric"/>
+
+        <Button Text="Calcular Promedio" Clicked="OnCounterClicked"/>
+
+        <Label x:Name="resultadoLabel" 
+               Text="El promedio es:" 
+               FontSize="Medium" 
+               HorizontalOptions="Center"
+               Margin="0,20,0,0"/>
+
+        <Image Source="cali.jpg" 
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               WidthRequest="100" 
+               HeightRequest="100" />
+
+    </StackLayout>
+</ContentPage>
